@@ -221,6 +221,10 @@ body {
   padding-left: 100px;
   padding-top: 272px;
   padding-bottom: 206px;
+  background-color: #303030;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url('../images/hero/bg.jpg');
+  background-size: cover;
 }
 
 .hero-section-description {
@@ -234,6 +238,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
+  color: var(--secondary-text-color-theme-dark);
 }
 /* ==================== /HERO ==================== */
 
@@ -382,6 +387,8 @@ body {
 .employees-card-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .employees-card {
@@ -413,6 +420,39 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #303030;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #303030;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--accent-color);
 }
 /* ==================== /EMPLOYEES ==================== */
 
