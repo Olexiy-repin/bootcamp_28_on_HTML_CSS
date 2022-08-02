@@ -43,6 +43,53 @@
         class="contact-form-message"
         placeholder="Your message"
       ></textarea>
+      <fieldset class="contact-form-fieldset">
+        <legend>Your age</legend>
+
+        <label for="user-age-18">18+</label>
+        <input id="user-age-18" type="radio" name="user_age" value="18" />
+
+        <label for="user-age-25">25+</label>
+        <input id="user-age-25" type="radio" name="user_age" value="25" />
+
+        <label for="user-age-35">35+</label>
+        <input id="user-age-35" type="radio" name="user_age" value="35" />
+      </fieldset>
+      <fieldset class="contact-form-fieldset">
+        <legend>Your hobby</legend>
+
+        <label>
+          football
+          <input type="checkbox" name="user_hobby" value="football" />
+        </label>
+
+        <label>
+          swimming
+          <input type="checkbox" name="user_hobby" value="swimming" />
+        </label>
+
+        <label>
+          tennis
+          <input type="checkbox" name="user_hobby" value="tennis" />
+        </label>
+      </fieldset>
+      <select name="user_car">
+        <optgroup label="sdfsdf">
+          <option value="Mercedes">Mercedes</option>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+        </optgroup>
+        <optgroup label="asdfadsfsdf">
+          <option value="Mercedes">Mercedes</option>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+        </optgroup>
+        <optgroup label="kljlkjl">
+          <option value="Mercedes">Mercedes</option>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+        </optgroup>
+      </select>
       <div class="contact-form-btn-wrapper">
         <button type="submit" class="contact-form-btn contact-form-btn-submit">submit</button>
         <button type="reset" class="contact-form-btn contact-form-btn-reset">clear</button>
