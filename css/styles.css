@@ -31,11 +31,58 @@ ol {
 } */
 
 /* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* 500px + */
+/* @media (min-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 768px + */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* 0px - 767px */
+/* @media (max-width: 767px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 0px - 500px */
+/* @media (max-width: 500px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 
 /* ========== AND ========== */
+/* 
+--1200px--
 
+768px + true
+0px - 1199px false
+*/
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: teal;
+  }
+} */
 /* ========== OR ========== */
+/* 
+-- 768px --
 
+0px - 767px false
+1200px + false
+*/
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
 /* ========== TYPES ========== */
 /* 
   all
@@ -43,4 +90,45 @@ ol {
   print
 */
 
+/* @media print {
+  .menu {
+    display: none;
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .about__btn {
+    display: none;
+  }
+} */
+
 /* ========== ORIENTATION ========== */
+/* @media screen and (orientation: portrait) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
