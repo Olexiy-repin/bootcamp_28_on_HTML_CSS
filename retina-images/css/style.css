@@ -46,6 +46,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url('../images/car@2x.jpg');
+  }
+}
+
 /* 
 1x - 96dpi
 2x - 192dpi
