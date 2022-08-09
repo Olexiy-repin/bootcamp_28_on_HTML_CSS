@@ -63,18 +63,19 @@
 
 .contact-form-checkbox-desc {
   font-size: 14px;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-bottom: 40px;
 
   &::before {
-    display: block;
+    display: inline-block;
     width: 18px;
     height: 18px;
     border: 1px solid #555555;
     content: '';
     cursor: pointer;
     margin-right: 10px;
+    vertical-align: middle;
 
     .contact-form-checkbox:checked + & {
       background-color: var(--accent-color);
@@ -85,6 +86,10 @@
       outline: 2px solid rgba(0, 0, 255, 0.5);
     }
   }
+}
+
+.contact-form-checkbox-desc-span {
+  vertical-align: middle;
 }
 
 .contact-form-submit {

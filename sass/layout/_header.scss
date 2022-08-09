@@ -5,6 +5,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .logo__img {
+    fill: #ffffff;
+  }
+
   .menu {
     display: none;
   }
@@ -21,10 +25,13 @@
 
   .open-mobile-menu-btn__icon {
     display: block;
+    fill: #ffffff;
   }
 }
 
 .page-header {
+  position: absolute;
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -41,7 +48,8 @@
   }
 
   .page-header {
-    background-color: #555555;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
   .page-navigation {
@@ -91,13 +99,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  // .page-header {
-  //   position: absolute;
-  //   width: 100%;
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  // }
-
   .page-header__container {
     justify-content: flex-start;
   }
